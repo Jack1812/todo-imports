@@ -1,0 +1,57 @@
+/* Estilos básicos del menú */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Estilos del submenú */
+.submenu .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu .dropdown li {
+    width: 100%;
+}
+
+.submenu:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    padding: 10px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #666;
+}
