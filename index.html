@@ -3,27 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venta y Soporte Técnico</title>
+    <title>TODO IMPORTS - Venta y Soporte Técnico</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>TODO IMPORTS</h1>
+    <!-- Header pequeño con horario, dirección y teléfono -->
+    <header class="header-info">
+        <div class="info-bar">
+            <p>Lunes a Sábado 9am a 6pm - Domingo 10am a 3pm | Moquegua | 983 558 113</p>
+        </div>
+    </header>
+
+    <!-- Header para la imagen, búsqueda y redes sociales -->
+    <header class="header-top zoom-target">
+        <div class="top-bar">
+            <img src="img/imagen.png" alt="TODO IMPORTS" class="logo">
+            
+            <input type="text" placeholder="Buscar...">
+            <!-- Eliminé el segundo ícono de Facebook -->
+        </div>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="img/icofacebook.png" alt="Facebook" class="social-icon facebook-icon">
+        </a>
+    </header>
+
+    <!-- Header para el menú de inicio -->
+    <header class="header-menu zoom-target">
         <nav>
             <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#pc-gamer">PC Gamer</a></li>
-                <a href="#">Computadoras ▾</a>
-                        <ul class="dropdown">
-                            <li><a href="#pc-gamer">PC Gamer</a></li>
-                            <li><a href="#computadoras">Computadoras</a></li>
-                        </ul>
-                    </li>
-                <li><a href="#Movil">Moviles</a></li>
+                <li class="dropdown">
+                    <a href="#">Computadoras ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#pc-gamer">PC Gamer</a></li>
+                        <li><a href="#computadoras">Computadoras</a></li>
+                    </ul>
+                </li>
+                <li><a href="#movil">Móviles</a></li>
                 <li><a href="#todo-en-uno">Todo en Uno</a></li>
                 <li><a href="#laptops">Laptops</a></li>
                 <li><a href="#tablets">Tablets</a></li>
-                <li><a href="#pantallas">Pantallas</a></li>
+                <li class="dropdown">
+                    <a href="#">Pantallas ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#monitores">Monitores</a></li>
+                        <li><a href="#monitores-curvos">Monitores Curvos</a></li>
+                    </ul>
+                </li>
                 <li><a href="#parlantes">Parlantes</a></li>
                 <li><a href="#impresoras">Impresoras</a></li>
                 <li><a href="#proyectores">Proyectores</a></li>
@@ -32,38 +58,23 @@
             </ul>
         </nav>
     </header>
-    
-    <section id="inicio">
-        <h2>Bienvenido a Nuestra Tienda</h2>
-        <p>Encuentra los mejores productos y servicios tecnológicos.</p>
+
+    <!-- Imagen debajo del header-menu -->
+    <div class="banner zoom-target">
+        <img src="img/portada.jpg" alt="Banner promocional" style="width: 100%; height: auto;">
+    </div>
+
+    <!-- Contenido principal -->
+    <section id="inicio" class="zoom-target">
+        <p>Categoria</p>
+        <p>Explore nuestra gama de productos</p>
     </section>
-    
-    <section id="productos">
-        <h2>Productos Destacados</h2>
-        <div class="producto">
-            <h3>Laptop Dell Inspiron</h3>
-            <p>Procesador i7, 16GB RAM, 512GB SSD</p>
-        </div>
-        <div class="producto">
-            <h3>Impresora HP LaserJet</h3>
-            <p>Impresión rápida y de alta calidad</p>
-        </div>
-    </section>
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form>
-            <input type="text" id="nombre" placeholder="Tu Nombre" required>
-            <input type="email" id="email" placeholder="Tu Correo" required>
-            <textarea id="mensaje" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    
+
+ 
     <footer>
-        <p>&copy; 2025 Venta y Soporte Técnico</p>
+        <p>&copy; 2025 TODO IMPORTS - Venta y Soporte Técnico</p>
     </footer>
-    
+
     <script src="js/script.js"></script>
 </body>
 </html>

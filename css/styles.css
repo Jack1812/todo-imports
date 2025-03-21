@@ -1,57 +1,172 @@
-/* Estilos básicos del menú */
+/* Estilos generales */
 nav {
-    background-color: #333;
+    width: 100%;
+    max-width: 1200px;
     padding: 10px;
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
+/* Menú principal */
 .menu {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center; /* Centrar los elementos del menú */
+    position: relative; /* Añadir posición relativa al contenedor del menú */
 }
 
 .menu li {
-    position: relative;
+    margin-right: 10px; /* Reducir el margen entre los elementos del menú */
+    position: relative; /* Añadir posición relativa a los elementos del menú */
 }
 
 .menu a {
     text-decoration: none;
-    color: white;
-    padding: 10px 15px;
+    color: white; /* Color del texto del menú */
+    padding: 8px 10px; /* Reducir el padding de los enlaces del menú */
     display: block;
+    font-size: 12px;
 }
 
 .menu a:hover {
-    background-color: #555;
+    background-color: #555; /* Color de fondo al pasar el mouse */
 }
 
-/* Estilos del submenú */
-.submenu .dropdown {
+/* Estilos para el submenú */
+.submenu .dropdown-menu {
+    display: none;
+    position: absolute; /* Posicionar el submenú de manera absoluta */
+    top: 100%; /* Colocar el submenú debajo del elemento padre */
+    left: 0;
+    background-color: white; /* Fondo del submenú */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para el submenú */
+    z-index: 1; /* Asegurar que el submenú esté por encima de otros elementos */
+    min-width: 150px; /* Ancho mínimo del submenú */
+}
+
+.submenu:hover .dropdown-menu {
+    display: block; /* Mostrar el submenú al pasar el mouse */
+}
+
+.dropdown-menu li {
+    padding: 8px 16px; /* Espaciado interno de los elementos del submenú */
+}
+
+.dropdown-menu li a {
+    color: black; /* Color del texto del submenú */
+    text-decoration: none;
+    display: block;
+}
+.menu .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #444;
-    top: 100%;
-    left: 0;
-    min-width: 200px;
-    list-style: none;
-    padding: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu li a:hover {
+    background-color: #ddd; /* Color de fondo al pasar el mouse */
+}
+
+/* Header con información */
+.header-info {
+    background-color: #ffffff;
+    color: black;
+    padding: 5px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.info-bar p {
     margin: 0;
 }
 
-.submenu .dropdown li {
+/* Header superior (imagen, búsqueda y redes sociales) */
+.header-top {
+    background-color: #f1f1f1;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    max-width: 1200px;
 }
 
-.submenu:hover .dropdown {
+.top-bar input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+    width: 300px;
+    border: 1px solid #2046cf;
+    border-radius: 4px;
+}
+
+.social-icon {
+    width: 1px;
+    height: 1px;
+}
+
+/* Estilos para el logo de la empresa */
+.logo {
+    width: 100px; /* Tamaño del logo */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Estilos para el ícono de Facebook */
+.facebook-icon {
+    width: 50px; /* Tamaño del ícono de Facebook */
+    height: 50px; /* Mantener la proporción */
+}
+
+/* Header del menú */
+.header-menu {
+    background-color: #043947;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    position: relative; /* Añadir posición relativa al contenedor del menú */
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; /* Añadir posición relativa */
+    z-index: 0; /* Asegurar que esté detrás del menú desplegable */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
-.dropdown a {
-    padding: 10px;
-    display: block;
+/* Animaciones */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-.dropdown a:hover {
-    background-color: #666;
+.zoom-in {
+    animation: zoomIn 1s ease-in-out;
 }
