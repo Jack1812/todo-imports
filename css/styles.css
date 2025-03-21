@@ -241,3 +241,31 @@ nav {
 .zoom-in {
     animation: zoomIn 1s ease-in-out;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #4fbedd;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+    z-index: 1000;
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+}
+
+.back-to-top img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+}
+
+.back-to-top:hover {
+    background-color: #ffffff;
+}
