@@ -214,12 +214,17 @@ nav {
 }
 
 .image-item p {
-    font-size: 14px; /* Tamaño del texto */
+    font-size: 10px; /* Tamaño del texto */
     color: #333; /* Color del texto */
     margin-top: 10px; /* Espacio entre la imagen y el texto */
 }
 
 
+/* Estilos para la imagen de PARLANTE */
+.banner.parlante img {
+    width: 50%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantener la proporción */
+}
 
 /* Animaciones */
 @keyframes zoomIn {
