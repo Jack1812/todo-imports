@@ -155,6 +155,39 @@ nav {
     display: block;
 }
 
+
+/* Estilos para la sección de inicio */
+#inicio {
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 5px 5px; /* Espaciado interno */
+    text-align: center; /* Centrar texto horizontalmente */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100px; /* Altura mínima para la sección */
+}
+
+.inicio-content {
+    max-width: 600px; /* Ancho máximo del contenido */
+}
+
+#inicio p {
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    margin: 10px 0; /* Espaciado entre párrafos */
+}
+
+#inicio p:first-child {
+    font-size: 24px; /* Tamaño de la fuente para el primer párrafo */
+    font-weight: bold; /* Texto en negrita */
+    color: #043947; /* Color del texto */
+}
+
+#inicio p:last-child {
+    font-size: 16px; /* Tamaño de la fuente para el segundo párrafo */
+    color: #666; /* Color del texto */
+}
+
 /* Animaciones */
 @keyframes zoomIn {
     from {
