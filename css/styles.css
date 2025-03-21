@@ -172,21 +172,54 @@ nav {
 }
 
 #inicio p {
-    font-size: 18px; /* Tamaño de la fuente */
+    font-size: 58px; /* Tamaño de la fuente */
     color: #333; /* Color del texto */
     margin: 10px 0; /* Espaciado entre párrafos */
 }
 
 #inicio p:first-child {
-    font-size: 24px; /* Tamaño de la fuente para el primer párrafo */
+    font-size: 28px; /* Tamaño de la fuente para el primer párrafo */
     font-weight: bold; /* Texto en negrita */
     color: #043947; /* Color del texto */
 }
 
 #inicio p:last-child {
-    font-size: 16px; /* Tamaño de la fuente para el segundo párrafo */
+    font-size: 26px; /* Tamaño de la fuente para el segundo párrafo */
     color: #666; /* Color del texto */
 }
+/* Estilos para la sección de imágenes */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px; /* Espaciado interno */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+.image-item:hover {
+    transform: scale(1.2); /* Efecto de hundimiento al pasar el mouse */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más pequeña al pasar el mouse */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave */
+}
+.image-item:active {
+    transform: scale(0.98); /* Efecto de hundimiento al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más pequeña al hacer clic */
+}
+
+.image-item img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantener la proporción */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.image-item p {
+    font-size: 14px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
 
 /* Animaciones */
 @keyframes zoomIn {
